@@ -1,0 +1,811 @@
+/* fonts started */
+@font-face {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/rubik-v23-cyrillic-regular.woff2") format("woff2"),
+    url("../fonts/rubik-v23-cyrillic-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/rubik-v23-cyrillic-500.woff2") format("woff2"),
+    url("../fonts/rubik-v23-cyrillic-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/rubik-v23-cyrillic-700.woff2") format("woff2"),
+    url("../fonts/rubik-v23-cyrillic-700.woff") format("woff");
+}
+
+/* fonts finish */
+
+/* site style started */
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+/* header style started */
+
+header {
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 1240px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 20px;
+}
+
+.header-top {
+  background-color: #f6f6f6;
+}
+
+.header__top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.column1 {
+  display: flex;
+  align-items: center;
+}
+
+
+.header-logo {
+  display: inline-block;
+  margin-right: 35px;
+}
+
+.header-courses {
+  margin: 0 0 0 25px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.courses {
+  margin: 0;
+}
+
+.courses-unity {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  color: #2959ce;
+}
+
+.column2 {
+  display: flex;
+  align-items: center;
+}
+
+.header-search {
+  display: flex;
+  align-items: center;
+  width: 275px;
+  padding: 13px 15px;
+  /* background-image: url("../images/search.png"); */
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 60px;
+}
+
+.header-search:focus {
+  outline: none;
+}
+
+.header-search::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #8d8d8d;
+
+}
+
+.search-text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #8d8d8d;
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70px;
+  height: 36px;
+  margin-left: 25px;
+  padding: 3px;
+  background-color: #dce6ff;
+  border-radius: 39px;
+}
+
+.language-uz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #000;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.language-ru {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #a6a6a6;
+  border-radius: 50%;
+}
+
+.header-link {
+  display: inline-block;
+  margin-left: 25px;
+  padding: 13px 20px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background-color: #7296ec;
+  border-radius: 10px;
+}
+
+/* .header-bottom {
+} */
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  list-style: none;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.header__item-link {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #7f7f7f;
+}
+
+/* header style is over */
+/* advertising style started */
+.advertising {
+  margin-bottom: 50px;
+}
+
+.aside-advertising {
+  display: inline-block;
+}
+
+/* advertising style is over */
+/* main style has started */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+/* news list style started */
+.newness {
+  background-color: #fff;
+}
+
+.newness-wrapper {
+  margin-top: 50px;
+}
+
+.newness-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.newness__item-link {
+  text-decoration: none;
+}
+
+.newness-item {
+  width: 393px;
+  margin-bottom: 10px;
+  padding: 20px 17px 15px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+}
+
+.newness-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000;
+}
+
+.newness-paragrph {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #4a4b4c;
+}
+
+.newness-end {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.newness-time {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #5E5F61;
+}
+
+/* news list style is over */
+
+.latest-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1050px;
+  margin: 60px auto;
+  padding: 24px 29px;
+  background-image: url("../images/backgroubdimg.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.latest__news-box {
+  width: 404px;
+}
+
+.latest__news-paragrph {
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #000;
+}
+
+.latest__news-link {
+  padding: 13px 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f78b3b;
+  border-radius: 10px;
+}
+
+/* world news style started */
+
+.worldnews-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000;
+}
+
+.worldnews-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.worldnews-column {
+  width: 797px;
+}
+
+.worldnews-list {
+  margin: 0;
+}
+
+.worldnews-item {
+  width: 797px;
+  margin-bottom: 10px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+}
+
+.worldnews__item-end {
+  margin-bottom: 0;
+}
+
+.worldnews-link {
+  display: inline-block;
+  padding: 20px 20px 20px 17px;
+  text-decoration: none;
+}
+
+.worldnews__ltem-box {
+  display: flex;
+}
+
+.item-text {
+  width: 535px;
+  margin-left: 15px;
+}
+
+.item__text-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #000;
+}
+
+.item__text-paragrph {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #4a4b4c;
+}
+
+.worldnews__date-box {
+  display: flex;
+  align-items: center;
+}
+
+.worldnews__date-text {
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  color: #5e5f61;
+}
+
+.worldnews__link {
+  display: inline-block;
+  margin-top: 17px;
+  padding: 17px 343px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  background-color: #eaeaea;
+  border-radius: 10px;
+}
+
+.news {
+  width: 393px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 17px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+}
+
+.news-list {
+  margin: 0;
+}
+
+.news-item {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.news__item-top {
+  padding-top: 0;
+}
+
+.news__item-end {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.news-heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000;
+}
+
+.news-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.news-paragrph {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+}
+
+.news-date {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #5e5f61;
+}
+
+/* world news style is over */
+/* advertising style started */
+.advertising-link {
+  display: inline-block;
+}
+
+/* advertising style is over  */
+/* footer style started */
+.site-footer {
+  padding: 40px 0;
+  background-color: #7297ef;
+}
+
+.footer-wrapper {
+  width: 998px;
+  margin: 0 auto;
+}
+
+.footer__wrapper-part {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cecece;
+}
+
+.footer-list {
+  width: 264px;
+  margin: 0;
+}
+
+.footer__item-link {
+  display: inline-block;
+}
+
+.footer__item-paragrph {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.footer__Information-list {
+  margin-top: 23px;
+  margin-bottom: 30px;
+}
+
+.footer__Information-item {
+  margin-top: 20px;
+}
+
+.Information__item-link {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__part-end {
+  display: flex;
+  justify-content: space-between;
+}
+
+.part__end-text {
+  width: 161px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  align-items: center;
+  color: #fff;
+}
+
+.network-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* the footer style is over */
+
+/* intiro style started */
+
+.intiro {
+  margin-bottom: 100px;
+}
+
+.intiro-item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.intiro__item-end {
+  border-bottom: 0;
+}
+
+.intiro-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intiro__column-form {
+  width: 696px;
+}
+
+.intiro-input {
+  width: 345px;
+  margin-bottom: 10px;
+  padding: 18px 20px;
+  background-color: #fff;
+  border: 1px solid #00000033;
+  border-radius: 10px;
+}
+
+.intiro-input::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #000;
+  opacity: 0.5;
+}
+
+.intiro-input:focus {
+  outline: 1px solid #00000033;
+}
+
+.intiro__input-email {
+  display: block;
+  width: 696px;
+  margin-bottom: 10px;
+  padding: 18px 20px;
+  background-color: #fff;
+  border: 1px solid #00000033;
+  border-radius: 10px;
+}
+
+.intiro__input-email::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  opacity: 0.5;
+}
+
+.intiro__input-email:focus {
+  outline: 1px solid #00000033;
+}
+
+.intiro__textarea-text {
+  width: 696px;
+  height: 180px;
+  margin-bottom: 20px;
+  padding: 18px 20px;
+  background-color: #fff;
+  border: 1px solid #00000033;
+  border-radius: 10px;
+  resize: none;
+}
+
+.intiro__textarea-text:focus {
+  outline: 1px solid #00000033;
+}
+
+.intiro__textarea-text::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.intiro-button {
+  display: block;
+  width: 145px;
+  margin-left: auto;
+  padding: 17px 30px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #7297ef;
+  border: none;
+  border-radius: 10px;
+}
+
+.intiro {
+  font-style: normal;
+}
+
+.intiro-list {
+  width: 494px;
+  height: 310px;
+  margin: 0;
+  padding: 40px 25px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+
+.intiro__item-heading {
+  margin-top: 20px;
+  margin-bottom: 7px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000;
+}
+
+.item__heading-top {
+  margin-top: 0;
+}
+
+.intiro__item-link {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000;
+}
+
+/* intiro style is over */
+
+/* The Elon Musk car information style has begun */
+
+.wrapper-worldnews {
+  margin-bottom: 60px;
+}
+
+.worldnews__column-end {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.worldnews-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 36px;
+  font-weight: 500;
+  color: #000;
+}
+
+.worldnews-img {
+  margin-bottom: 25px;
+}
+
+.worldnews-paragrph {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000;
+}
+
+.worldnews__paragrph-end {
+  margin-bottom: 0;
+}
+
+/* Elon Musk car information style is over */
+/* interest section style started */
+
+.interests-wrapper {
+  margin-bottom: 100px;
+}
+
+.interests-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #000;
+}
+
+.interests-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.interests-item {
+  width: 393px;
+  height: 207px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+}
+
+.interests-link {
+  display: inline-block;
+  padding: 20px 18px 15px;
+  text-decoration: none;
+}
+
+.interests__item-heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #000;
+}
+
+.interests__item-paragrph {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #4a4b4c;
+}
+
+/* interests section style is over */
+/* main style is over */
+/* the site is out of style */
